@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accordion</title>
+        <!--link to css-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!--first accordion-->
+        <div class = "joke">
+            
+            <div class = "heading">
+                <h1>Celine's First Accordion</h1>
+                <p>Dedicated to Mr. Edward of OTA. Ta-Da!</p>
+            </div>
+            
+            <!--first block-->
+            <div class = "accordion" aria-expanded="false" aria-controls="content1">
+               
+                <button>Do you want to hear a joke?
+                    <!--content-->
+                    <span id = "content1" class = "accordion-content">
+                        <p>Why do bees have sticky hair?<br>
+                        Because they use honeycombs!</p>
+                    </span>
+                </button>
+            </div>
+           
+            <!--second block-->
+            <div class = "accordion" aria-expanded="false" aria-controls="content2">
+                <button>Do you want to hear another joke?
+                    <!--content-->
+                    <span id = "content2" class = "accordion-content">
+                        <p>What&apos;s a bee&apos;s favorite sport?<br>
+                        Rug-bee!</p>
+                    </span>
+                </button>
+            </div>
+           
+            <!--third block-->
+            <div class = "accordion" aria-expanded="false" aria-controls="content3">
+                <button>You want another joke.
+                    <!--content-->
+                    <span id = "content3" class = "accordion-content">
+                        <p>Why do bees always have a good time?<br>
+                        Because they love to buzz around and have a honey of a time!</p>
+                    </span>
+                </button>
+            </div>
+
+            <!--expand/collapse-->
+            <div class = accordion-controller> 
+                <input type = "button" class = "expand" value = "expand all">
+                <input type = "button" class = "collapse" value = "collapse all">
+            </div>
+
+        </div>
+        
+        <!--second accordion-->
+        <div class = "slang">
+            
+            <!--second heading-->
+            <div class = "heading">
+                <h1>Celine's Second Accordion</h1>
+                <p>Dedicated to my really cool teammates. Ta-Da!</p>
+            </div>
+            
+            <!--first block-->
+            <div class = "accordion" aria-expanded="false" aria-controls="content1">
+                
+                <button>Do you know what RIZZ is?
+                    <!--content-->
+                    <span id = "content4" class = "accordion-content">
+                        <p>It means style, charm, or attractiveness.<br>
+                        For example, you might say "that guy has rizz"!</p>
+                    </span>
+                </button>
+            </div>
+            
+            <!--second block-->
+            <div class = "accordion" aria-expanded="false" aria-controls="content2">
+                <button>Do you know what SLAY is?
+                    <!--content-->
+                    <span id = "content5" class = "accordion-content">
+                        <p>It means to do something well or to achieve great success.<br>
+                        For example, you might say "Slay, queen, show them how it's done"!</p>
+                    </span>
+                </button>
+            </div>
+           
+            <!--third block-->
+            <div class = "accordion" aria-expanded="false" aria-controls="content3">
+                <button>Do you know what STAN is?
+                    <!--content-->
+                    <span id = "content6" class = "accordion-content">
+                        <p>It means an extremely devoted fan of a celebrity, musician, or public figure.<br>
+                        For example, you might say "I stan OTA"!</p>
+                    </span>
+                </button>
+            </div>
+
+            <!--expand/collapse-->
+            <div class = accordion-controller> 
+                <input type = "button" class = "expand" value = "expand all">
+                <input type = "button" class = "collapse" value = "collapse all">
+            </div>
+        </div>
+
+        <!--link to js-->
+        <script src="script.js"></script>
+    </body>
+</html>
+

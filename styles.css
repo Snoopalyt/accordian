@@ -1,0 +1,160 @@
+
+/* all headings*/
+.heading {
+    color: darkgreen;
+    font-size: 32px;
+    margin: 10px;
+}
+/*accordion specific*/
+.joke .heading{
+    color: darkslateblue;
+}
+.slang .heading{
+    color:darksalmon;
+}
+
+/*all accordion buttons*/
+.accordion button{
+    background-color: white;
+    border: 2px solid green;
+    color: black;
+    width: 100%;
+    /*rounded buttons*/
+    border-radius: 4px;
+    /*vertical space around font*/
+    padding: 15px;
+    margin: 5px;
+    font-size: 32px;
+    text-align: left;
+}
+/*accordion specific*/
+.joke .accordion button{
+    border: 2px solid darkslateblue;
+}
+.slang .accordion button{
+    border: 2px solid darksalmon;
+}
+
+/*all accordion button hovers*/
+.accordion button:hover {
+    background-color: green;
+    color: white;
+  }
+/*accordion specific*/
+.joke .accordion button:hover{
+    background-color: darkslateblue;
+}
+.slang .accordion button:hover{
+    background-color: darksalmon;
+}
+/*--*/
+
+/*hide content at first*/
+.accordion-content{
+    display: none;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+/*flex box for expand all/collapse all placement*/
+.accordion-controller {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/*all expand all/collapse all buttons*/
+.accordion-controller input[type = "button"]{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.accordion-controller input[type = "button"]:hover{
+    background-color:black;
+    color: white;
+}
+/*accordion specific settings for expand/collapse*/
+.joke .accordion-controller input[type = "button"]{
+    background-color: white;
+    border: 2px solid darkslateblue;
+}
+.joke .accordion-controller input[type = "button"]:hover{
+    background-color:darkslateblue;
+    color: white;
+}
+.slang .accordion-controller input[type = "button"]{
+    background-color: white;
+    border: 2px solid darksalmon;
+}
+.slang .accordion-controller input[type = "button"]:hover{
+    background-color:darksalmon;
+    color: white;
+}
+
+/* RESPONSIVE ACROSS --> mobile:320px (font: 32/14), tablet:640px (font: 36/16), desktop:1024px (font: 36/18), desktop:1400px (font: 40/24) */
+@media (min-width: 320px){
+    .heading h1{
+        font-size: 32px;
+    }
+    .heading p{
+        font-size: 18px;
+    }
+    .accordion button{
+        font-size: 18px;
+        margin: 4px;
+    }
+    .accordion-content, .accordion-controller input[type = "button"]{
+        font-size: 14px;
+    }
+}
+@media (min-width: 640px){
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 20px;
+    }
+    .accordion button{
+        font-size: 20px;
+        margin: 6px;
+    }
+    .accordion-content, .accordion-controller input[type = "button"] {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1024px){
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 22px;
+    }
+    .accordion button{
+        font-size: 22px;
+        margin: 8px;
+    }
+    .accordion-content, .accordion-controller input[type = "button"] {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1400px){
+    .heading h1{
+        font-size: 40px;
+    }
+    .heading p{
+        font-size: 28px;
+    }
+    .accordion button{
+        font-size: 28px;
+        margin: 10px;
+    }
+    .accordion-content, .accordion-controller input[type = "button"] {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
